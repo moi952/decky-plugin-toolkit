@@ -59,9 +59,11 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
         {/* Dismisses without forcing a trip to Settings — going there is
             the only way to actually install one, but just acknowledging
             the notification shouldn't require it. */}
-        <ActionButton size="medium" onClick={dismissNew} width="100%">
-          {t("dismiss")}
-        </ActionButton>
+        <div>
+          <ActionButton size="medium" onClick={dismissNew} width="100%">
+            {t("dismiss")}
+          </ActionButton>
+        </div>
       </StatusCard>
     </div>
   );

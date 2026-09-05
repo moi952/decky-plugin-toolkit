@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { PanelSection, PanelSectionRow } from "@decky/ui";
 import { QrCodeButton } from "@moi952/decky-ui-kit";
 import { useTranslation } from "react-i18next";
@@ -19,12 +19,6 @@ export const GitHubSection = ({ fetchReleases, featureRequestUrl, bugReportUrl }
             pluginUpdateFocus.markExpanded();
         setExpandedState(v);
     };
-    useEffect(() => {
-        if (!expanded)
-            return;
-        const heartbeat = setInterval(pluginUpdateFocus.markExpanded, 1000);
-        return () => clearInterval(heartbeat);
-    }, [expanded]);
     const wasRestored = useRef(expanded).current;
     const sectionRef = useRef(null);
     useLandOnFresh(sectionRef, wasRestored, "last");

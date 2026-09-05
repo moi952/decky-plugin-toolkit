@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { PanelSection, PanelSectionRow } from "@decky/ui";
 import { CollapsibleSection, QrCodeButton } from "@moi952/decky-ui-kit";
 import { useTranslation } from "react-i18next";
@@ -25,12 +25,6 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ kofiUrl = DEFAUL
     if (v) otherPluginsFocus.markExpanded();
     setExpandedState(v);
   };
-  useEffect(() => {
-    if (!expanded) return;
-    const heartbeat = setInterval(otherPluginsFocus.markExpanded, 1000);
-    return () => clearInterval(heartbeat);
-  }, [expanded]);
-
   // Which plugins (if any) OtherPluginsBanner's single button just
   // announced — those rows start expanded, and only the first of them (in
   // list order) actually takes focus.

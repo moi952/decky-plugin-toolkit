@@ -51,7 +51,7 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
             </div>
           ))}
         </div>
-        <div style={{ marginBottom: 6 }}>
+        <div style={{ width: "100%", marginBottom: 6 }}>
           <ActionButton size="medium" width="100%" onClick={onPreview}>
             <FiEye size={14} style={{ marginRight: 6 }} />
             {t("preview_plugin", { count: newOnes.length })}
@@ -60,7 +60,7 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
         {/* Dismisses without forcing a trip to Settings — going there is
             the only way to actually install one, but just acknowledging
             the notification shouldn't require it. */}
-        <div>
+        <div style={{ width: "100%" }}>
           <ActionButton size="medium" onClick={dismissNew} width="100%">
             <FiCheck size={14} style={{ marginRight: 6 }} />
             {t("dismiss")}

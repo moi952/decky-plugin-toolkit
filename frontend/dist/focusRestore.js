@@ -1,10 +1,6 @@
 import { useEffect } from "react";
-// Shared "land on this section, expanded and focused" signal, for a
-// Settings page's own remount-restore logic (a QAM close/reopen tears
-// down and recreates the whole React tree — these survive that as plain
-// module state, restored only within a short window after the fact).
-// One instance per named section — call makeExpansionFocus() once per
-// section that needs this, not per component instance.
+// Survives a QAM close/reopen remount as plain module state, not React
+// state — one instance per section, restored only within a short window.
 const RESTORE_WINDOW_MS = 5000;
 export const makeExpansionFocus = () => {
     let expandedAt = 0;
@@ -15,14 +11,9 @@ export const makeExpansionFocus = () => {
         isExpansionFresh: () => Date.now() - expandedAt < RESTORE_WINDOW_MS,
     };
 };
-// Ready-made instances for this package's own collapsible sections
-// (plugin update, other plugins) and the feature-request QR code (not a
-// collapsible section, but the same "was this navigated to recently"
-// signal — reused as-is rather than a differently-named twin) — a
-// consumer's SettingsView imports these directly rather than calling
-// makeExpansionFocus() itself, so the same instance is shared between
-// wherever it's marked (e.g. a banner's onClick) and wherever it's read
-// (the section's own initial state / focus-restore effect).
+// Ready-made shared instances — a consumer's SettingsView imports these
+// directly so the mark (a banner's onClick) and the read (the section's
+// initial state) share the same instance.
 export const pluginUpdateFocus = makeExpansionFocus();
 export const otherPluginsFocus = makeExpansionFocus();
 export const featureRequestFocus = makeExpansionFocus();

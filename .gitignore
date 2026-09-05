@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+
+# Frontend package: node_modules is regenerable, but dist/ IS committed —
+# a git dependency install (no npm registry) doesn't run this package's
+# own build step, so the compiled output needs to already be there.
+frontend/node_modules/

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decky-plugin-toolkit"
+version = "0.1.0"
+description = "Shared backend helpers for moi952's Decky Loader plugins: HTTP/subprocess helpers, project.config.json loader, self-update checker."
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["decky_plugin_toolkit*"]

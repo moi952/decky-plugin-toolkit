@@ -1,0 +1,50 @@
+{
+    "plugin_update": {
+        "banner": "Plugin-update beschikbaar: {{version}}",
+        "section_label": "Plugin-update",
+        "current": "Huidige versie: {{version}}",
+        "latest": "Nieuwste versie: {{version}}",
+        "up_to_date": "Plugin is up-to-date",
+        "check_failed": "Kan nu niet controleren op updates",
+        "view_release": "Release bekijken",
+        "check_button": "Controleren op updates",
+        "checking": "Controleren…",
+        "install_button": "{{version}} installeren",
+        "installing": "Installeren…",
+        "downloading": "Downloaden…",
+        "install_failed_title": "Plugin-update mislukt",
+        "no_backend": "Decky's installatieprogramma is nu niet bereikbaar.",
+        "install_timeout": "Geen reactie van Decky Loader — de installatie is mogelijk vastgelopen. Probeer het opnieuw.",
+        "choose_version_label": "Specifieke versie installeren",
+        "no_releases": "Geen releases gevonden",
+        "already_installed": "Al geïnstalleerd ({{version}})"
+    },
+    "other_plugins": {
+        "banner_title_one": "Nieuwe plugin beschikbaar!",
+        "banner_title_other": "Nieuwe plugins beschikbaar!",
+        "open_settings": "Naar instellingen",
+        "install_latest": "Nieuwste versie installeren",
+        "installing": "Installeren…",
+        "install_failed": "Kon de nieuwste versie niet ophalen. Probeer het later opnieuw.",
+        "view_on_github": "Bekijk op GitHub"
+    },
+    "whats_new": {
+        "dismiss": "Begrepen",
+        "older": "Ouder",
+        "newer": "Nieuwer",
+        "support_note": "Als je de ontwikkeling van de plugin wilt steunen, is dat altijd welkom — zie de sectie Ondersteuning in Instellingen."
+    },
+    "settings_common": {
+        "whats_new_history": "Updategeschiedenis",
+        "github_section_title": "GitHub",
+        "feature_request_button": "Functie aanvragen",
+        "feature_request_hint": "Scan met je telefoon, of druk om in de browser te openen",
+        "bug_report_button": "Bug melden",
+        "bug_report_hint": "Scan met je telefoon, of druk om in de browser te openen",
+        "support_section_title": "Ondersteuning",
+        "kofi_button": "Steun me op Ko-fi",
+        "kofi_hint": "Scan met je telefoon, of druk om in de browser te openen",
+        "kofi_description": "Deze plugin is gratis en blijft dat ook. Wil je toch een handje helpen, elke koffie telt.",
+        "other_plugins_section_title": "Mijn andere plugins"
+    }
+}

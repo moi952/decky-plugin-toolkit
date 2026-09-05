@@ -1,0 +1,50 @@
+{
+  "plugin_update": {
+    "banner": "Atualização do plugin disponível: {{version}}",
+    "section_label": "Atualização do plugin",
+    "current": "Versão atual: {{version}}",
+    "latest": "Versão mais recente: {{version}}",
+    "up_to_date": "O plugin está atualizado",
+    "check_failed": "Não foi possível verificar atualizações agora",
+    "view_release": "Ver versão",
+    "check_button": "Verificar atualizações",
+    "checking": "A verificar…",
+    "install_button": "Instalar {{version}}",
+    "installing": "A instalar…",
+    "downloading": "A transferir…",
+    "install_failed_title": "Falha ao atualizar o plugin",
+    "no_backend": "O instalador do Decky não está acessível agora.",
+    "install_timeout": "Sem resposta do Decky Loader — a instalação pode ter encravado. Tenta novamente.",
+    "choose_version_label": "Instalar uma versão específica",
+    "no_releases": "Nenhuma versão encontrada",
+    "already_installed": "Já instalada ({{version}})"
+  },
+  "other_plugins": {
+    "banner_title_one": "Novo plugin disponível!",
+    "banner_title_other": "Novos plugins disponíveis!",
+    "open_settings": "Ir para as Definições",
+    "install_latest": "Instalar a versão mais recente",
+    "installing": "A instalar…",
+    "install_failed": "Não foi possível obter a versão mais recente. Tenta novamente mais tarde.",
+    "view_on_github": "Ver no GitHub"
+  },
+  "whats_new": {
+    "dismiss": "Entendido",
+    "older": "Anterior",
+    "newer": "Mais recente",
+    "support_note": "Se quiseres apoiar o desenvolvimento do plugin, é sempre bem-vindo — vê a secção Apoio nas Definições."
+  },
+  "settings_common": {
+    "whats_new_history": "Histórico de atualizações",
+    "github_section_title": "GitHub",
+    "feature_request_button": "Pedir uma funcionalidade",
+    "feature_request_hint": "Digitaliza com o teu telemóvel, ou prime para abrir no navegador",
+    "bug_report_button": "Reportar um bug",
+    "bug_report_hint": "Digitaliza com o teu telemóvel, ou prime para abrir no navegador",
+    "support_section_title": "Apoio",
+    "kofi_button": "Apoia-me no Ko-fi",
+    "kofi_hint": "Digitaliza com o telemóvel ou pressiona para abrir no navegador",
+    "kofi_description": "Este plugin é gratuito e vai continuar a ser. Se mesmo assim quiseres dar uma ajuda, cada café conta.",
+    "other_plugins_section_title": "Os meus outros plugins"
+  }
+}

@@ -4,6 +4,12 @@ import { WhatsNewVersionEntry } from "./WhatsNewCard";
 
 const VERSION_KEY_RE = /^v(\d+)_(\d+)_(\d+)$/;
 
+// "0.16.2" -> "v0_16_2" — the i18n key convention every whats_new entry
+// uses. Used by WhatsNewBanner to find the entry matching the version
+// that's actually currently installed (not just "the newest one" — those
+// can differ if a release shipped with no user-facing bullet).
+export const currentVersionKey = (version: string): string => `v${version.replace(/\./g, "_")}`;
+
 const parseKey = (key: string): number[] | null => {
   const m = key.match(VERSION_KEY_RE);
   return m ? m.slice(1).map(Number) : null;

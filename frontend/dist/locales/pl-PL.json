@@ -1,0 +1,50 @@
+{
+    "plugin_update": {
+        "banner": "Dostępna aktualizacja wtyczki: {{version}}",
+        "section_label": "Aktualizacja wtyczki",
+        "current": "Bieżąca wersja: {{version}}",
+        "latest": "Najnowsza wersja: {{version}}",
+        "up_to_date": "Wtyczka jest aktualna",
+        "check_failed": "Nie można teraz sprawdzić aktualizacji",
+        "view_release": "Zobacz wydanie",
+        "check_button": "Sprawdź aktualizacje",
+        "checking": "Sprawdzanie…",
+        "install_button": "Zainstaluj {{version}}",
+        "installing": "Instalowanie…",
+        "downloading": "Pobieranie…",
+        "install_failed_title": "Aktualizacja wtyczki nie powiodła się",
+        "no_backend": "Instalator Decky jest teraz niedostępny.",
+        "install_timeout": "Brak odpowiedzi od Decky Loader — instalacja mogła się zawiesić. Spróbuj ponownie.",
+        "choose_version_label": "Zainstaluj konkretną wersję",
+        "no_releases": "Nie znaleziono wydań",
+        "already_installed": "Już zainstalowana ({{version}})"
+    },
+    "other_plugins": {
+        "banner_title_one": "Dostępny nowy plugin!",
+        "banner_title_other": "Dostępne nowe pluginy!",
+        "open_settings": "Przejdź do ustawień",
+        "install_latest": "Zainstaluj najnowszą wersję",
+        "installing": "Instalowanie…",
+        "install_failed": "Nie udało się pobrać najnowszej wersji. Spróbuj ponownie później.",
+        "view_on_github": "Zobacz na GitHub"
+    },
+    "whats_new": {
+        "dismiss": "Rozumiem",
+        "older": "Starsze",
+        "newer": "Nowsze",
+        "support_note": "Jeśli chcesz wesprzeć rozwój wtyczki, zawsze jest to mile widziane — zobacz sekcję Wsparcie w Ustawieniach."
+    },
+    "settings_common": {
+        "whats_new_history": "Historia aktualizacji",
+        "github_section_title": "GitHub",
+        "feature_request_button": "Poproś o funkcję",
+        "feature_request_hint": "Zeskanuj telefonem lub naciśnij, aby otworzyć w przeglądarce",
+        "bug_report_button": "Zgłoś błąd",
+        "bug_report_hint": "Zeskanuj telefonem lub naciśnij, aby otworzyć w przeglądarce",
+        "support_section_title": "Wsparcie",
+        "kofi_button": "Wesprzyj mnie na Ko-fi",
+        "kofi_hint": "Zeskanuj telefonem lub naciśnij, aby otworzyć w przeglądarce",
+        "kofi_description": "Ten plugin jest darmowy i takim pozostanie. Jeśli mimo to chcesz pomóc, każda kawa się liczy.",
+        "other_plugins_section_title": "Moje inne pluginy"
+    }
+}

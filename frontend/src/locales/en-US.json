@@ -1,0 +1,50 @@
+{
+  "plugin_update": {
+    "banner": "Plugin update available: {{version}}",
+    "section_label": "Plugin update",
+    "current": "Current version: {{version}}",
+    "latest": "Latest version: {{version}}",
+    "up_to_date": "Plugin is up to date",
+    "check_failed": "Couldn't check for updates right now",
+    "view_release": "View release",
+    "check_button": "Check for updates",
+    "checking": "Checking…",
+    "install_button": "Install {{version}}",
+    "installing": "Installing…",
+    "downloading": "Downloading…",
+    "install_failed_title": "Plugin update failed",
+    "no_backend": "Decky's installer isn't reachable right now.",
+    "install_timeout": "No response from Decky Loader — the install may have stalled. Try again.",
+    "choose_version_label": "Install a specific version",
+    "no_releases": "No releases found",
+    "already_installed": "Already installed ({{version}})"
+  },
+  "other_plugins": {
+    "banner_title_one": "New plugin available!",
+    "banner_title_other": "New plugins available!",
+    "open_settings": "Go to Settings",
+    "install_latest": "Install latest version",
+    "installing": "Installing…",
+    "install_failed": "Couldn't fetch the latest release. Try again later.",
+    "view_on_github": "View on GitHub"
+  },
+  "whats_new": {
+    "dismiss": "Got it",
+    "older": "Older",
+    "newer": "Newer",
+    "support_note": "If you'd like to support the plugin's development, it's always welcome — see the Support section in Settings."
+  },
+  "settings_common": {
+    "whats_new_history": "Update history",
+    "github_section_title": "GitHub",
+    "feature_request_button": "Request a feature",
+    "feature_request_hint": "Scan with your phone, or press to open in your browser",
+    "bug_report_button": "Report a bug",
+    "bug_report_hint": "Scan with your phone, or press to open in your browser",
+    "support_section_title": "Support",
+    "kofi_button": "Support me on Ko-fi",
+    "kofi_hint": "Scan with your phone, or press to open in your browser",
+    "kofi_description": "This plugin is free and always will be. If you'd still like to lend a hand, every coffee helps.",
+    "other_plugins_section_title": "My other plugins"
+  }
+}

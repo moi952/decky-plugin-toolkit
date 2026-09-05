@@ -1,94 +1,752 @@
 export declare const pluginToolkitTranslations: {
+    readonly "de-DE": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
     readonly "en-US": {
-        readonly plugin_update: {
-            readonly banner: "Plugin update available: {{version}}";
-            readonly section_label: "Plugin update";
-            readonly current: "Current version: {{version}}";
-            readonly latest: "Latest version: {{version}}";
-            readonly up_to_date: "Plugin is up to date";
-            readonly check_failed: "Couldn't check for updates right now";
-            readonly view_release: "View release";
-            readonly check_button: "Check for updates";
-            readonly checking: "Checking…";
-            readonly install_button: "Install {{version}}";
-            readonly installing: "Installing…";
-            readonly downloading: "Downloading…";
-            readonly install_failed_title: "Plugin update failed";
-            readonly no_backend: "Decky's installer isn't reachable right now.";
-            readonly install_timeout: "No response from Decky Loader — the install may have stalled. Try again.";
-            readonly choose_version_label: "Install a specific version";
-            readonly no_releases: "No releases found";
-            readonly already_installed: "Already installed ({{version}})";
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
         };
-        readonly other_plugins: {
-            readonly install_latest: "Install latest version";
-            readonly installing: "Installing…";
-            readonly install_failed: "Couldn't fetch the latest release. Try again later.";
-            readonly view_on_github: "View on GitHub";
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
         };
-        readonly whats_new: {
-            readonly older: "Older";
-            readonly newer: "Newer";
-            readonly support_note: "If you'd like to support the plugin's development, it's always welcome — see the Support section in Settings.";
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
         };
-        readonly settings_common: {
-            readonly whats_new_history: "Update history";
-            readonly github_section_title: "GitHub";
-            readonly feature_request_button: "Request a feature";
-            readonly feature_request_hint: "Scan with your phone, or press to open in your browser";
-            readonly bug_report_button: "Report a bug";
-            readonly bug_report_hint: "Scan with your phone, or press to open in your browser";
-            readonly support_section_title: "Support";
-            readonly kofi_button: "Support me on Ko-fi";
-            readonly kofi_hint: "Scan with your phone, or press to open in your browser";
-            readonly kofi_description: "This plugin is free and always will be. If you'd still like to lend a hand, every coffee helps.";
-            readonly other_plugins_section_title: "My other plugins";
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "es-ES": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
         };
     };
     readonly "fr-FR": {
-        readonly plugin_update: {
-            readonly banner: "Mise à jour du plugin disponible : {{version}}";
-            readonly section_label: "Mise à jour du plugin";
-            readonly current: "Version actuelle : {{version}}";
-            readonly latest: "Dernière version : {{version}}";
-            readonly up_to_date: "Le plugin est à jour";
-            readonly check_failed: "Impossible de vérifier les mises à jour pour l'instant";
-            readonly view_release: "Voir la release";
-            readonly check_button: "Vérifier les mises à jour";
-            readonly checking: "Vérification…";
-            readonly install_button: "Installer {{version}}";
-            readonly installing: "Installation…";
-            readonly downloading: "Téléchargement…";
-            readonly install_failed_title: "Échec de la mise à jour";
-            readonly no_backend: "L'installeur de Decky n'est pas joignable pour le moment.";
-            readonly install_timeout: "Aucune réponse de Decky Loader — l'installation a peut-être bloqué. Réessaie.";
-            readonly choose_version_label: "Installer une version spécifique";
-            readonly no_releases: "Aucune release trouvée";
-            readonly already_installed: "Déjà installé ({{version}})";
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
         };
-        readonly other_plugins: {
-            readonly install_latest: "Installer la dernière version";
-            readonly installing: "Installation…";
-            readonly install_failed: "Impossible de récupérer la dernière release. Réessaie plus tard.";
-            readonly view_on_github: "Voir sur GitHub";
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
         };
-        readonly whats_new: {
-            readonly older: "Plus ancien";
-            readonly newer: "Plus récent";
-            readonly support_note: "Si tu veux soutenir le développement du plugin, c'est toujours bienvenu — section Soutien des Réglages.";
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
         };
-        readonly settings_common: {
-            readonly whats_new_history: "Historique des mises à jour";
-            readonly github_section_title: "GitHub";
-            readonly feature_request_button: "Demander une fonctionnalité";
-            readonly feature_request_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur";
-            readonly bug_report_button: "Signaler un bug";
-            readonly bug_report_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur";
-            readonly support_section_title: "Soutien";
-            readonly kofi_button: "Me soutenir sur Ko-fi";
-            readonly kofi_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur";
-            readonly kofi_description: "Ce plugin est gratuit et le restera. Si tu veux quand même donner un coup de pouce, chaque café compte.";
-            readonly other_plugins_section_title: "Mes autres plugins";
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "it-IT": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "ja-JP": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "ko-KR": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "nl-NL": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "pl-PL": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "pt-BR": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "pt-PT": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "ru-RU": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "tr-TR": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "uk-UA": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
+        };
+    };
+    readonly "zh-CN": {
+        plugin_update: {
+            banner: string;
+            section_label: string;
+            current: string;
+            latest: string;
+            up_to_date: string;
+            check_failed: string;
+            view_release: string;
+            check_button: string;
+            checking: string;
+            install_button: string;
+            installing: string;
+            downloading: string;
+            install_failed_title: string;
+            no_backend: string;
+            install_timeout: string;
+            choose_version_label: string;
+            no_releases: string;
+            already_installed: string;
+        };
+        other_plugins: {
+            banner_title_one: string;
+            banner_title_other: string;
+            open_settings: string;
+            install_latest: string;
+            installing: string;
+            install_failed: string;
+            view_on_github: string;
+        };
+        whats_new: {
+            dismiss: string;
+            older: string;
+            newer: string;
+            support_note: string;
+        };
+        settings_common: {
+            whats_new_history: string;
+            github_section_title: string;
+            feature_request_button: string;
+            feature_request_hint: string;
+            bug_report_button: string;
+            bug_report_hint: string;
+            support_section_title: string;
+            kofi_button: string;
+            kofi_hint: string;
+            kofi_description: string;
+            other_plugins_section_title: string;
         };
     };
 };

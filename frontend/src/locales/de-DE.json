@@ -1,0 +1,50 @@
+{
+  "plugin_update": {
+    "banner": "Plugin-Update verfügbar: {{version}}",
+    "section_label": "Plugin-Update",
+    "current": "Aktuelle Version: {{version}}",
+    "latest": "Neueste Version: {{version}}",
+    "up_to_date": "Plugin ist aktuell",
+    "check_failed": "Konnte gerade nicht nach Updates suchen",
+    "view_release": "Release ansehen",
+    "check_button": "Nach Updates suchen",
+    "checking": "Wird geprüft…",
+    "install_button": "{{version}} installieren",
+    "installing": "Wird installiert…",
+    "downloading": "Wird heruntergeladen…",
+    "install_failed_title": "Plugin-Update fehlgeschlagen",
+    "no_backend": "Deckys Installer ist gerade nicht erreichbar.",
+    "install_timeout": "Keine Antwort von Decky Loader — die Installation könnte hängen geblieben sein. Versuche es erneut.",
+    "choose_version_label": "Bestimmte Version installieren",
+    "no_releases": "Keine Releases gefunden",
+    "already_installed": "Bereits installiert ({{version}})"
+  },
+  "other_plugins": {
+    "banner_title_one": "Neues Plugin verfügbar!",
+    "banner_title_other": "Neue Plugins verfügbar!",
+    "open_settings": "Zu den Einstellungen",
+    "install_latest": "Neueste Version installieren",
+    "installing": "Wird installiert …",
+    "install_failed": "Neueste Version konnte nicht abgerufen werden. Versuch es später erneut.",
+    "view_on_github": "Auf GitHub ansehen"
+  },
+  "whats_new": {
+    "dismiss": "Verstanden",
+    "older": "Älter",
+    "newer": "Neuer",
+    "support_note": "Wenn du die Entwicklung des Plugins unterstützen möchtest, ist das immer willkommen — siehe den Support-Bereich in den Einstellungen."
+  },
+  "settings_common": {
+    "whats_new_history": "Update-Verlauf",
+    "github_section_title": "GitHub",
+    "feature_request_button": "Funktion anfragen",
+    "feature_request_hint": "Mit dem Handy scannen, oder drücken, um im Browser zu öffnen",
+    "bug_report_button": "Fehler melden",
+    "bug_report_hint": "Mit dem Handy scannen, oder drücken, um im Browser zu öffnen",
+    "support_section_title": "Unterstützung",
+    "kofi_button": "Unterstütz mich auf Ko-fi",
+    "kofi_hint": "Mit dem Handy scannen oder drücken, um im Browser zu öffnen",
+    "kofi_description": "Dieses Plugin ist kostenlos und bleibt es auch. Wenn du trotzdem eine Kleinigkeit beisteuern möchtest, hilft jeder Kaffee.",
+    "other_plugins_section_title": "Meine anderen Plugins"
+  }
+}

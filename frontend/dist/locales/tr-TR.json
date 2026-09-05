@@ -1,0 +1,50 @@
+{
+    "plugin_update": {
+        "banner": "Eklenti güncellemesi mevcut: {{version}}",
+        "section_label": "Eklenti güncellemesi",
+        "current": "Mevcut sürüm: {{version}}",
+        "latest": "En son sürüm: {{version}}",
+        "up_to_date": "Eklenti güncel",
+        "check_failed": "Şu anda güncellemeler kontrol edilemiyor",
+        "view_release": "Sürümü görüntüle",
+        "check_button": "Güncellemeleri kontrol et",
+        "checking": "Kontrol ediliyor…",
+        "install_button": "{{version}} yükle",
+        "installing": "Yükleniyor…",
+        "downloading": "İndiriliyor…",
+        "install_failed_title": "Eklenti güncellemesi başarısız oldu",
+        "no_backend": "Decky'nin yükleyicisine şu anda ulaşılamıyor.",
+        "install_timeout": "Decky Loader'dan yanıt yok — kurulum takılmış olabilir. Tekrar deneyin.",
+        "choose_version_label": "Belirli bir sürüm yükle",
+        "no_releases": "Sürüm bulunamadı",
+        "already_installed": "Zaten yüklü ({{version}})"
+    },
+    "other_plugins": {
+        "banner_title_one": "Yeni eklenti mevcut!",
+        "banner_title_other": "Yeni eklentiler mevcut!",
+        "open_settings": "Ayarlara git",
+        "install_latest": "En son sürümü yükle",
+        "installing": "Yükleniyor…",
+        "install_failed": "En son sürüm alınamadı. Daha sonra tekrar dene.",
+        "view_on_github": "GitHub'da görüntüle"
+    },
+    "whats_new": {
+        "dismiss": "Anladım",
+        "older": "Daha eski",
+        "newer": "Daha yeni",
+        "support_note": "Eklentinin geliştirilmesini desteklemek istersen, bu her zaman memnuniyetle karşılanır — Ayarlar'daki Destek bölümüne bak."
+    },
+    "settings_common": {
+        "whats_new_history": "Güncelleme geçmişi",
+        "github_section_title": "GitHub",
+        "feature_request_button": "Özellik iste",
+        "feature_request_hint": "Telefonunuzla tarayın veya tarayıcıda açmak için basın",
+        "bug_report_button": "Hata bildir",
+        "bug_report_hint": "Telefonunuzla tarayın veya tarayıcıda açmak için basın",
+        "support_section_title": "Destek",
+        "kofi_button": "Ko-fi'de beni destekle",
+        "kofi_hint": "Telefonunla tara veya tarayıcıda açmak için bas",
+        "kofi_description": "Bu eklenti ücretsiz ve öyle kalacak. Yine de bir elini taşın altına koymak istersen, her kahve bir işe yarar.",
+        "other_plugins_section_title": "Diğer eklentilerim"
+    }
+}

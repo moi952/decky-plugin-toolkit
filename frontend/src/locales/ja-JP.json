@@ -1,0 +1,50 @@
+{
+  "plugin_update": {
+    "banner": "プラグインの更新があります: {{version}}",
+    "section_label": "プラグインの更新",
+    "current": "現在のバージョン: {{version}}",
+    "latest": "最新バージョン: {{version}}",
+    "up_to_date": "プラグインは最新です",
+    "check_failed": "現在、更新を確認できません",
+    "view_release": "リリースを見る",
+    "check_button": "更新を確認",
+    "checking": "確認中…",
+    "install_button": "{{version}} をインストール",
+    "installing": "インストール中…",
+    "downloading": "ダウンロード中…",
+    "install_failed_title": "プラグインの更新に失敗しました",
+    "no_backend": "Decky のインストーラーに接続できません。",
+    "install_timeout": "Decky Loader からの応答がありません — インストールが停止した可能性があります。もう一度お試しください。",
+    "choose_version_label": "特定のバージョンをインストール",
+    "no_releases": "リリースが見つかりません",
+    "already_installed": "インストール済み（{{version}}）"
+  },
+  "other_plugins": {
+    "banner_title_one": "新しいプラグインが利用可能です！",
+    "banner_title_other": "新しいプラグインが利用可能です！",
+    "open_settings": "設定を開く",
+    "install_latest": "最新バージョンをインストール",
+    "installing": "インストール中…",
+    "install_failed": "最新バージョンを取得できませんでした。後でもう一度お試しください。",
+    "view_on_github": "GitHubで見る"
+  },
+  "whats_new": {
+    "dismiss": "了解",
+    "older": "前へ",
+    "newer": "次へ",
+    "support_note": "プラグインの開発を応援したい場合は、いつでも歓迎します — 設定のサポートセクションをご覧ください。"
+  },
+  "settings_common": {
+    "whats_new_history": "更新履歴",
+    "github_section_title": "GitHub",
+    "feature_request_button": "機能をリクエストする",
+    "feature_request_hint": "スマートフォンでスキャンするか、ボタンを押してブラウザで開く",
+    "bug_report_button": "バグを報告する",
+    "bug_report_hint": "スマートフォンでスキャンするか、ボタンを押してブラウザで開く",
+    "support_section_title": "サポート",
+    "kofi_button": "Ko-fiで応援する",
+    "kofi_hint": "スマートフォンでスキャンするか、押してブラウザで開く",
+    "kofi_description": "このプラグインは無料で、これからも無料です。それでも応援したいと思ったら、コーヒー一杯でも力になります。",
+    "other_plugins_section_title": "他のプラグイン"
+  }
+}

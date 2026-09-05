@@ -26,7 +26,8 @@
     "install_latest": "Nieuwste versie installeren",
     "installing": "Installeren…",
     "install_failed": "Kon de nieuwste versie niet ophalen. Probeer het later opnieuw.",
-    "view_on_github": "Bekijk op GitHub"
+    "view_on_github": "Bekijk op GitHub",
+    "dismiss": "Begrepen"
   },
   "whats_new": {
     "dismiss": "Begrepen",

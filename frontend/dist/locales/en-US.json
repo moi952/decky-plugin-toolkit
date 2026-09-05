@@ -26,7 +26,8 @@
         "install_latest": "Install latest version",
         "installing": "Installing…",
         "install_failed": "Couldn't fetch the latest release. Try again later.",
-        "view_on_github": "View on GitHub"
+        "view_on_github": "View on GitHub",
+        "dismiss": "Got it"
     },
     "whats_new": {
         "dismiss": "Got it",

@@ -26,7 +26,8 @@
     "install_latest": "Installa l'ultima versione",
     "installing": "Installazione…",
     "install_failed": "Impossibile recuperare l'ultima versione. Riprova più tardi.",
-    "view_on_github": "Vedi su GitHub"
+    "view_on_github": "Vedi su GitHub",
+    "dismiss": "Capito"
   },
   "whats_new": {
     "dismiss": "Capito",

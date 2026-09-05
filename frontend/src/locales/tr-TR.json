@@ -26,7 +26,8 @@
     "install_latest": "En son sürümü yükle",
     "installing": "Yükleniyor…",
     "install_failed": "En son sürüm alınamadı. Daha sonra tekrar dene.",
-    "view_on_github": "GitHub'da görüntüle"
+    "view_on_github": "GitHub'da görüntüle",
+    "dismiss": "Anladım"
   },
   "whats_new": {
     "dismiss": "Anladım",

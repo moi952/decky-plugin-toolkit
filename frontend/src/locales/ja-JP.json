@@ -26,7 +26,8 @@
     "install_latest": "最新バージョンをインストール",
     "installing": "インストール中…",
     "install_failed": "最新バージョンを取得できませんでした。後でもう一度お試しください。",
-    "view_on_github": "GitHubで見る"
+    "view_on_github": "GitHubで見る",
+    "dismiss": "了解"
   },
   "whats_new": {
     "dismiss": "了解",

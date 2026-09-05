@@ -43,17 +43,22 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
             </div>
           ))}
         </div>
-        {/* Marks the notification as seen the moment the user actually acts
-            on it — going to Settings (where they can install each one)
-            already IS the acknowledgment, no separate "Compris" needed. */}
-        <ActionButton
-          onClick={() => {
-            dismissNew();
-            onOpenSettings();
-          }}
-          width="100%"
-        >
-          {t("open_settings")}
+        <div style={{ marginBottom: 6 }}>
+          <ActionButton
+            onClick={() => {
+              dismissNew();
+              onOpenSettings();
+            }}
+            width="100%"
+          >
+            {t("open_settings")}
+          </ActionButton>
+        </div>
+        {/* Dismisses without forcing a trip to Settings — going there is
+            the only way to actually install one, but just acknowledging
+            the notification shouldn't require it. */}
+        <ActionButton onClick={dismissNew} width="100%">
+          {t("dismiss")}
         </ActionButton>
       </StatusCard>
     </div>

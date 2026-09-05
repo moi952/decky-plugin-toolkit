@@ -28,6 +28,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -78,6 +79,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -128,6 +130,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -178,6 +181,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -228,6 +232,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -278,6 +283,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -328,6 +334,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -378,6 +385,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -428,6 +436,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -478,6 +487,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -528,6 +538,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -578,6 +589,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -628,6 +640,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -678,6 +691,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;
@@ -728,6 +742,7 @@ export declare const pluginToolkitTranslations: {
             installing: string;
             install_failed: string;
             view_on_github: string;
+            dismiss: string;
         };
         whats_new: {
             dismiss: string;

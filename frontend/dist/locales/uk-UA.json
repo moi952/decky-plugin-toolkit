@@ -26,7 +26,8 @@
         "install_latest": "Встановити останню версію",
         "installing": "Встановлення…",
         "install_failed": "Не вдалося отримати останню версію. Спробуйте пізніше.",
-        "view_on_github": "Переглянути на GitHub"
+        "view_on_github": "Переглянути на GitHub",
+        "dismiss": "Зрозуміло"
     },
     "whats_new": {
         "dismiss": "Зрозуміло",

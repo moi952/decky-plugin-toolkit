@@ -26,7 +26,8 @@
     "install_latest": "Instalar a versão mais recente",
     "installing": "Instalando…",
     "install_failed": "Não foi possível obter a versão mais recente. Tente novamente mais tarde.",
-    "view_on_github": "Ver no GitHub"
+    "view_on_github": "Ver no GitHub",
+    "dismiss": "Entendi"
   },
   "whats_new": {
     "dismiss": "Entendi",

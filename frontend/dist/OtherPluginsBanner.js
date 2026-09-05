@@ -15,8 +15,8 @@ export const OtherPluginsBanner = ({ onOpenSettings }) => {
     const { visible: whatsNewVisible } = useWhatsNew();
     if (whatsNewVisible || newOnes.length === 0)
         return null;
-    return (_jsx("div", { style: { margin: "0 16px 12px" }, children: _jsxs(StatusCard, { variant: "info", icon: _jsx(FiPackage, {}), title: t("banner_title", { count: newOnes.length }), children: [_jsx("div", { style: { display: "flex", flexDirection: "column", gap: 10, width: "100%", marginBottom: 10, textAlign: "left" }, children: newOnes.map((plugin) => (_jsxs("div", { children: [_jsx("div", { style: { fontSize: 13, fontWeight: 700 }, children: plugin.name }), _jsx("div", { style: { fontSize: 11, opacity: 0.8, marginTop: 2 }, children: localizedDescription(plugin, i18n.language) })] }, plugin.id))) }), _jsx(ActionButton, { onClick: () => {
-                        dismissNew();
-                        onOpenSettings();
-                    }, width: "100%", children: t("open_settings") })] }) }));
+    return (_jsx("div", { style: { margin: "0 16px 12px" }, children: _jsxs(StatusCard, { variant: "info", icon: _jsx(FiPackage, {}), title: t("banner_title", { count: newOnes.length }), children: [_jsx("div", { style: { display: "flex", flexDirection: "column", gap: 10, width: "100%", marginBottom: 10, textAlign: "left" }, children: newOnes.map((plugin) => (_jsxs("div", { children: [_jsx("div", { style: { fontSize: 13, fontWeight: 700 }, children: plugin.name }), _jsx("div", { style: { fontSize: 11, opacity: 0.8, marginTop: 2 }, children: localizedDescription(plugin, i18n.language) })] }, plugin.id))) }), _jsx("div", { style: { marginBottom: 6 }, children: _jsx(ActionButton, { onClick: () => {
+                            dismissNew();
+                            onOpenSettings();
+                        }, width: "100%", children: t("open_settings") }) }), _jsx(ActionButton, { onClick: dismissNew, width: "100%", children: t("dismiss") })] }) }));
 };

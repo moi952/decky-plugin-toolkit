@@ -26,7 +26,8 @@
         "install_latest": "최신 버전 설치",
         "installing": "설치 중…",
         "install_failed": "최신 버전을 가져오지 못했습니다. 나중에 다시 시도하세요.",
-        "view_on_github": "GitHub에서 보기"
+        "view_on_github": "GitHub에서 보기",
+        "dismiss": "확인"
     },
     "whats_new": {
         "dismiss": "확인",

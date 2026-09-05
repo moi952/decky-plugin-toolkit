@@ -26,7 +26,8 @@
     "install_latest": "Neueste Version installieren",
     "installing": "Wird installiert …",
     "install_failed": "Neueste Version konnte nicht abgerufen werden. Versuch es später erneut.",
-    "view_on_github": "Auf GitHub ansehen"
+    "view_on_github": "Auf GitHub ansehen",
+    "dismiss": "Verstanden"
   },
   "whats_new": {
     "dismiss": "Verstanden",

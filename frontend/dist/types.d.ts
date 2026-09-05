@@ -30,3 +30,4 @@ export interface OtherPluginsManifest {
 }
 export declare const localizedDescription: (entry: OtherPluginEntry, locale: string) => string;
 export declare const DEFAULT_OTHER_PLUGINS_MANIFEST_URL = "https://cdn.jsdelivr.net/gh/moi952/decky-plugins@main/plugins.json";
+export declare const DEFAULT_KOFI_URL = "https://ko-fi.com/moi952";

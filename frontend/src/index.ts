@@ -10,7 +10,11 @@ export { OtherPluginsProvider, useOtherPlugins } from "./OtherPluginsContext";
 export { OtherPluginRow } from "./OtherPluginRow";
 export { OtherPluginsBanner } from "./OtherPluginsBanner";
 export { getDeckyBackend, installPlugin, fetchLatestReleaseFor, PluginInstallType } from "./deckyInstall";
+export { fetchPluginReleases } from "./githubReleases";
 export { compareVersions } from "./versions";
+export { UpdateHistorySection } from "./UpdateHistorySection";
+export { GitHubSection } from "./GitHubSection";
+export { SupportSection } from "./SupportSection";
 export {
   makeExpansionFocus,
   pluginUpdateFocus,
@@ -23,6 +27,7 @@ export { pluginToolkitTranslations } from "./translations";
 export {
   localizedDescription,
   DEFAULT_OTHER_PLUGINS_MANIFEST_URL,
+  DEFAULT_KOFI_URL,
 } from "./types";
 export type {
   PluginUpdateInfo,

@@ -3,6 +3,7 @@ import { Navigation } from "@decky/ui";
 import { toaster } from "@decky/api";
 import { useTranslation } from "react-i18next";
 import { ActionButton, CollapsibleSection } from "@moi952/decky-ui-kit";
+import { FiGithub } from "react-icons/fi";
 
 import { OtherPluginEntry, localizedDescription } from "./types";
 import { fetchLatestReleaseFor, installPlugin, PluginInstallType } from "./deckyInstall";
@@ -56,6 +57,7 @@ export const OtherPluginRow: React.FC<OtherPluginRowProps> = ({ plugin }) => {
           </ActionButton>
         </div>
         <ActionButton onClick={() => Navigation.NavigateToExternalWeb(plugin.url)} width="100%">
+          <FiGithub size={14} style={{ marginRight: 6, verticalAlign: "text-bottom" }} />
           {t("view_on_github")}
         </ActionButton>
       </div>

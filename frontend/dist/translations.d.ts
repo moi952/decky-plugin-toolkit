@@ -31,6 +31,19 @@ export declare const pluginToolkitTranslations: {
             readonly newer: "Newer";
             readonly support_note: "If you'd like to support the plugin's development, it's always welcome — see the Support section in Settings.";
         };
+        readonly settings_common: {
+            readonly whats_new_history: "Update history";
+            readonly github_section_title: "GitHub";
+            readonly feature_request_button: "Request a feature";
+            readonly feature_request_hint: "Scan with your phone, or press to open in your browser";
+            readonly bug_report_button: "Report a bug";
+            readonly bug_report_hint: "Scan with your phone, or press to open in your browser";
+            readonly support_section_title: "Support";
+            readonly kofi_button: "Support me on Ko-fi";
+            readonly kofi_hint: "Scan with your phone, or press to open in your browser";
+            readonly kofi_description: "This plugin is free and always will be. If you'd still like to lend a hand, every coffee helps.";
+            readonly other_plugins_section_title: "My other plugins";
+        };
     };
     readonly "fr-FR": {
         readonly plugin_update: {
@@ -63,6 +76,19 @@ export declare const pluginToolkitTranslations: {
             readonly older: "Plus ancien";
             readonly newer: "Plus récent";
             readonly support_note: "Si tu veux soutenir le développement du plugin, c'est toujours bienvenu — section Soutien des Réglages.";
+        };
+        readonly settings_common: {
+            readonly whats_new_history: "Historique des mises à jour";
+            readonly github_section_title: "GitHub";
+            readonly feature_request_button: "Demander une fonctionnalité";
+            readonly feature_request_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur";
+            readonly bug_report_button: "Signaler un bug";
+            readonly bug_report_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur";
+            readonly support_section_title: "Soutien";
+            readonly kofi_button: "Me soutenir sur Ko-fi";
+            readonly kofi_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur";
+            readonly kofi_description: "Ce plugin est gratuit et le restera. Si tu veux quand même donner un coup de pouce, chaque café compte.";
+            readonly other_plugins_section_title: "Mes autres plugins";
         };
     };
 };

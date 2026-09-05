@@ -42,6 +42,23 @@ export const pluginToolkitTranslations = {
       newer: "Newer",
       support_note: "If you'd like to support the plugin's development, it's always welcome — see the Support section in Settings.",
     },
+    // Section titles/labels for a Settings page assembled from this
+    // package's pieces (see decky-proton-launch's own SettingsView.tsx,
+    // the reference this wording is copied from verbatim) — always the
+    // same wording, so every consumer's Settings page reads identically.
+    settings_common: {
+      whats_new_history: "Update history",
+      github_section_title: "GitHub",
+      feature_request_button: "Request a feature",
+      feature_request_hint: "Scan with your phone, or press to open in your browser",
+      bug_report_button: "Report a bug",
+      bug_report_hint: "Scan with your phone, or press to open in your browser",
+      support_section_title: "Support",
+      kofi_button: "Support me on Ko-fi",
+      kofi_hint: "Scan with your phone, or press to open in your browser",
+      kofi_description: "This plugin is free and always will be. If you'd still like to lend a hand, every coffee helps.",
+      other_plugins_section_title: "My other plugins",
+    },
   },
   "fr-FR": {
     plugin_update: {
@@ -74,6 +91,19 @@ export const pluginToolkitTranslations = {
       older: "Plus ancien",
       newer: "Plus récent",
       support_note: "Si tu veux soutenir le développement du plugin, c'est toujours bienvenu — section Soutien des Réglages.",
+    },
+    settings_common: {
+      whats_new_history: "Historique des mises à jour",
+      github_section_title: "GitHub",
+      feature_request_button: "Demander une fonctionnalité",
+      feature_request_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur",
+      bug_report_button: "Signaler un bug",
+      bug_report_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur",
+      support_section_title: "Soutien",
+      kofi_button: "Me soutenir sur Ko-fi",
+      kofi_hint: "Scanne avec ton téléphone, ou appuie pour ouvrir dans le navigateur",
+      kofi_description: "Ce plugin est gratuit et le restera. Si tu veux quand même donner un coup de pouce, chaque café compte.",
+      other_plugins_section_title: "Mes autres plugins",
     },
   },
 } as const;

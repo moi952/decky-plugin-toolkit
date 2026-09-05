@@ -27,7 +27,9 @@
     "installing": "Wird installiert …",
     "install_failed": "Neueste Version konnte nicht abgerufen werden. Versuch es später erneut.",
     "view_on_github": "Auf GitHub ansehen",
-    "dismiss": "Verstanden"
+    "dismiss": "Verstanden",
+    "preview_plugin_one": "Plugin-Vorschau",
+    "preview_plugin_other": "Vorschau der Plugins"
   },
   "whats_new": {
     "dismiss": "Verstanden",

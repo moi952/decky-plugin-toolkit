@@ -21,8 +21,10 @@ export {
   otherPluginsFocus,
   featureRequestFocus,
   useLandOnFresh,
+  makeSetFocus,
+  otherPluginItemFocus,
 } from "./focusRestore";
-export type { ExpansionFocus } from "./focusRestore";
+export type { ExpansionFocus, SetFocus } from "./focusRestore";
 export { pluginToolkitTranslations } from "./translations";
 export {
   localizedDescription,

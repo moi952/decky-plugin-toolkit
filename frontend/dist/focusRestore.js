@@ -17,6 +17,18 @@ export const makeExpansionFocus = () => {
 export const pluginUpdateFocus = makeExpansionFocus();
 export const otherPluginsFocus = makeExpansionFocus();
 export const featureRequestFocus = makeExpansionFocus();
+export const makeSetFocus = () => {
+    let ids = new Set();
+    let markedAt = 0;
+    return {
+        markFocused: (list) => {
+            ids = new Set(list);
+            markedAt = Date.now();
+        },
+        getFreshIds: () => (Date.now() - markedAt < RESTORE_WINDOW_MS ? ids : new Set()),
+    };
+};
+export const otherPluginItemFocus = makeSetFocus();
 // Focuses + scrolls to the first (or last) enabled focusable element
 // inside `ref`'s container, but only when `isFresh` is true (a recent
 // mark via one of the ExpansionFocus instances above) — otherwise a

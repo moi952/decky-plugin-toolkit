@@ -27,7 +27,9 @@
     "installing": "正在安装…",
     "install_failed": "无法获取最新版本，请稍后再试。",
     "view_on_github": "在 GitHub 上查看",
-    "dismiss": "知道了"
+    "dismiss": "知道了",
+    "preview_plugin_one": "预览插件",
+    "preview_plugin_other": "预览插件"
   },
   "whats_new": {
     "dismiss": "知道了",

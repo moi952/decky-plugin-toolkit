@@ -27,7 +27,9 @@
         "installing": "Установка…",
         "install_failed": "Не удалось получить последнюю версию. Попробуйте позже.",
         "view_on_github": "Посмотреть на GitHub",
-        "dismiss": "Понятно"
+        "dismiss": "Понятно",
+        "preview_plugin_one": "Предпросмотр плагина",
+        "preview_plugin_other": "Предпросмотр плагинов"
     },
     "whats_new": {
         "dismiss": "Понятно",

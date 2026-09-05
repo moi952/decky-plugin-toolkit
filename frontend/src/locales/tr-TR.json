@@ -27,7 +27,9 @@
     "installing": "Yükleniyor…",
     "install_failed": "En son sürüm alınamadı. Daha sonra tekrar dene.",
     "view_on_github": "GitHub'da görüntüle",
-    "dismiss": "Anladım"
+    "dismiss": "Anladım",
+    "preview_plugin_one": "Eklenti önizlemesi",
+    "preview_plugin_other": "Eklenti önizlemesi"
   },
   "whats_new": {
     "dismiss": "Anladım",

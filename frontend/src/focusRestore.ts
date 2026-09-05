@@ -27,6 +27,32 @@ export const pluginUpdateFocus = makeExpansionFocus();
 export const otherPluginsFocus = makeExpansionFocus();
 export const featureRequestFocus = makeExpansionFocus();
 
+// Same idea as ExpansionFocus, but remembers *which ones* of several items
+// (e.g. several plugins in a list) should land pre-expanded — the
+// OtherPluginsBanner's single button marks every plugin it's currently
+// announcing here. The parent rendering the list (SupportSection) reads
+// this once to decide, per row, whether it should start expanded, and
+// which single one (the first match, in list order) should actually take
+// focus — see OtherPluginRow's `startExpanded`/`autoFocus` props.
+export interface SetFocus {
+  markFocused(ids: string[]): void;
+  getFreshIds(): Set<string>;
+}
+
+export const makeSetFocus = (): SetFocus => {
+  let ids: Set<string> = new Set();
+  let markedAt = 0;
+  return {
+    markFocused: (list: string[]) => {
+      ids = new Set(list);
+      markedAt = Date.now();
+    },
+    getFreshIds: () => (Date.now() - markedAt < RESTORE_WINDOW_MS ? ids : new Set()),
+  };
+};
+
+export const otherPluginItemFocus = makeSetFocus();
+
 // Focuses + scrolls to the first (or last) enabled focusable element
 // inside `ref`'s container, but only when `isFresh` is true (a recent
 // mark via one of the ExpansionFocus instances above) — otherwise a

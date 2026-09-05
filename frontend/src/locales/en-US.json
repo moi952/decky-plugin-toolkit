@@ -27,7 +27,9 @@
     "installing": "Installing…",
     "install_failed": "Couldn't fetch the latest release. Try again later.",
     "view_on_github": "View on GitHub",
-    "dismiss": "Got it"
+    "dismiss": "Got it",
+    "preview_plugin_one": "Preview plugin",
+    "preview_plugin_other": "Preview plugins"
   },
   "whats_new": {
     "dismiss": "Got it",

@@ -27,7 +27,9 @@
     "installing": "Instalowanie…",
     "install_failed": "Nie udało się pobrać najnowszej wersji. Spróbuj ponownie później.",
     "view_on_github": "Zobacz na GitHub",
-    "dismiss": "Rozumiem"
+    "dismiss": "Rozumiem",
+    "preview_plugin_one": "Podgląd wtyczki",
+    "preview_plugin_other": "Podgląd wtyczek"
   },
   "whats_new": {
     "dismiss": "Rozumiem",

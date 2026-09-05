@@ -27,7 +27,9 @@
         "installing": "A instalar…",
         "install_failed": "Não foi possível obter a versão mais recente. Tenta novamente mais tarde.",
         "view_on_github": "Ver no GitHub",
-        "dismiss": "Percebido"
+        "dismiss": "Percebido",
+        "preview_plugin_one": "Pré-visualizar plugin",
+        "preview_plugin_other": "Pré-visualizar plugins"
     },
     "whats_new": {
         "dismiss": "Entendido",

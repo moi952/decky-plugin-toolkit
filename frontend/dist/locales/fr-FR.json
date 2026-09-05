@@ -27,7 +27,9 @@
         "installing": "Installation…",
         "install_failed": "Impossible de récupérer la dernière version. Réessaie plus tard.",
         "view_on_github": "Voir sur GitHub",
-        "dismiss": "Compris"
+        "dismiss": "Compris",
+        "preview_plugin_one": "Aperçu du plugin",
+        "preview_plugin_other": "Aperçu des plugins"
     },
     "whats_new": {
         "dismiss": "Compris",

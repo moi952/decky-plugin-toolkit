@@ -14,6 +14,6 @@ export { compareVersions } from "./versions";
 export { UpdateHistorySection } from "./UpdateHistorySection";
 export { GitHubSection } from "./GitHubSection";
 export { SupportSection } from "./SupportSection";
-export { makeExpansionFocus, pluginUpdateFocus, otherPluginsFocus, featureRequestFocus, useLandOnFresh, } from "./focusRestore";
+export { makeExpansionFocus, pluginUpdateFocus, otherPluginsFocus, featureRequestFocus, useLandOnFresh, makeSetFocus, otherPluginItemFocus, } from "./focusRestore";
 export { pluginToolkitTranslations } from "./translations";
 export { localizedDescription, DEFAULT_OTHER_PLUGINS_MANIFEST_URL, DEFAULT_KOFI_URL, } from "./types";

@@ -6,6 +6,7 @@ import { FiPackage } from "react-icons/fi";
 import { useOtherPlugins } from "./OtherPluginsContext";
 import { useWhatsNew } from "./WhatsNewContext";
 import { localizedDescription } from "./types";
+import { otherPluginsFocus, otherPluginItemFocus } from "./focusRestore";
 
 interface OtherPluginsBannerProps {
   onOpenSettings: () => void;
@@ -22,6 +23,17 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
 
   if (whatsNewVisible || newOnes.length === 0) return null;
 
+  // One button regardless of count: it expands every announced plugin's
+  // own row in the Settings list (SupportSection reads this same mark)
+  // and lands focus on the first one's Install button — with just one
+  // plugin that's effectively "open it and go straight to Install".
+  const onPreview = () => {
+    otherPluginItemFocus.markFocused(newOnes.map((p) => p.id));
+    otherPluginsFocus.markExpanded();
+    dismissNew();
+    onOpenSettings();
+  };
+
   return (
     <div style={{ margin: "0 16px 12px" }}>
       <StatusCard
@@ -29,10 +41,6 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
         icon={<FiPackage />}
         title={t("banner_title", { count: newOnes.length })}
       >
-        {/* Plain text, no image/MediaRow here — the full presentation
-            (photo, install/GitHub buttons) lives in the Settings list this
-            banner links to; this is just "here's what's new", not a second
-            copy of that UI. */}
         <div style={{ display: "flex", flexDirection: "column", gap: 10, width: "100%", marginBottom: 10, textAlign: "left" }}>
           {newOnes.map((plugin) => (
             <div key={plugin.id}>
@@ -44,20 +52,14 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
           ))}
         </div>
         <div style={{ marginBottom: 6 }}>
-          <ActionButton
-            onClick={() => {
-              dismissNew();
-              onOpenSettings();
-            }}
-            width="100%"
-          >
-            {t("open_settings")}
+          <ActionButton size="medium" width="100%" onClick={onPreview}>
+            {t("preview_plugin", { count: newOnes.length })}
           </ActionButton>
         </div>
         {/* Dismisses without forcing a trip to Settings — going there is
             the only way to actually install one, but just acknowledging
             the notification shouldn't require it. */}
-        <ActionButton onClick={dismissNew} width="100%">
+        <ActionButton size="medium" onClick={dismissNew} width="100%">
           {t("dismiss")}
         </ActionButton>
       </StatusCard>

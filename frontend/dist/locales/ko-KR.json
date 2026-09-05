@@ -27,7 +27,9 @@
         "installing": "설치 중…",
         "install_failed": "최신 버전을 가져오지 못했습니다. 나중에 다시 시도하세요.",
         "view_on_github": "GitHub에서 보기",
-        "dismiss": "확인"
+        "dismiss": "확인",
+        "preview_plugin_one": "플러그인 미리보기",
+        "preview_plugin_other": "플러그인 미리보기"
     },
     "whats_new": {
         "dismiss": "확인",

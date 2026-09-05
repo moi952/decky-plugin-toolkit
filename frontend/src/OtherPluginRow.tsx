@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Navigation } from "@decky/ui";
 import { toaster } from "@decky/api";
 import { useTranslation } from "react-i18next";
@@ -8,9 +8,17 @@ import { FiDownload } from "react-icons/fi";
 
 import { OtherPluginEntry, localizedDescription } from "./types";
 import { fetchLatestReleaseFor, installPlugin, PluginInstallType } from "./deckyInstall";
+import { useLandOnFresh } from "./focusRestore";
 
 interface OtherPluginRowProps {
   plugin: OtherPluginEntry;
+  // Set by the parent list (SupportSection) when OtherPluginsBanner's
+  // single button was just clicked and this plugin is one of the ones it
+  // announced — every such row starts expanded.
+  startExpanded?: boolean;
+  // Only the first of those rows (in list order) also gets its install
+  // button actually focused/scrolled to — set by the same parent.
+  autoFocus?: boolean;
 }
 
 // One entry in the "My other plugins" Settings list — collapsed to just
@@ -23,10 +31,12 @@ interface OtherPluginRowProps {
 // here — Decky's own install flow handles either case fine regardless of
 // which enum value labels its confirm dialog. Uses the "other_plugins"
 // i18n namespace — see this package's translations.ts.
-export const OtherPluginRow: React.FC<OtherPluginRowProps> = ({ plugin }) => {
+export const OtherPluginRow: React.FC<OtherPluginRowProps> = ({ plugin, startExpanded, autoFocus }) => {
   const { t, i18n } = useTranslation("other_plugins");
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(!!startExpanded);
   const [installing, setInstalling] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+  useLandOnFresh(contentRef, !!autoFocus, "first");
 
   const install = async () => {
     setInstalling(true);
@@ -43,7 +53,7 @@ export const OtherPluginRow: React.FC<OtherPluginRowProps> = ({ plugin }) => {
 
   return (
     <CollapsibleSection label={plugin.name} expanded={expanded} onToggle={() => setExpanded((v) => !v)}>
-      <div style={{ padding: "8px 0 4px" }}>
+      <div ref={contentRef} style={{ padding: "8px 0 4px" }}>
         <img
           src={plugin.icon}
           alt=""

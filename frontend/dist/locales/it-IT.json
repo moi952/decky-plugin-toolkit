@@ -27,7 +27,9 @@
         "installing": "Installazione…",
         "install_failed": "Impossibile recuperare l'ultima versione. Riprova più tardi.",
         "view_on_github": "Vedi su GitHub",
-        "dismiss": "Capito"
+        "dismiss": "Capito",
+        "preview_plugin_one": "Anteprima del plugin",
+        "preview_plugin_other": "Anteprima dei plugin"
     },
     "whats_new": {
         "dismiss": "Capito",

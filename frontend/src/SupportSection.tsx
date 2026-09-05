@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { OtherPluginRow } from "./OtherPluginRow";
 import { useOtherPlugins } from "./OtherPluginsContext";
-import { otherPluginsFocus, useLandOnFresh } from "./focusRestore";
+import { otherPluginsFocus, otherPluginItemFocus, useLandOnFresh } from "./focusRestore";
 import { DEFAULT_KOFI_URL } from "./types";
 
 interface SupportSectionProps {
@@ -31,7 +31,17 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ kofiUrl = DEFAUL
     return () => clearInterval(heartbeat);
   }, [expanded]);
 
-  const wasRestored = useRef(expanded).current;
+  // Which plugins (if any) OtherPluginsBanner's single button just
+  // announced — those rows start expanded, and only the first of them (in
+  // list order) actually takes focus.
+  const targetIds = useRef(otherPluginItemFocus.getFreshIds()).current;
+  const firstTargetId = others.find((p) => targetIds.has(p.id))?.id;
+
+  // Only for a plain remount while already expanded (QAM close/reopen)
+  // with no specific plugin targeted — when one *is* targeted, that row's
+  // own autoFocus below handles landing focus instead, so this doesn't
+  // also fire and fight over it.
+  const wasRestored = useRef(expanded && targetIds.size === 0).current;
   const sectionRef = useRef<HTMLDivElement>(null);
   useLandOnFresh(sectionRef, wasRestored, "first");
 
@@ -53,7 +63,12 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ kofiUrl = DEFAUL
             >
               <div style={{ marginTop: 8, marginLeft: 16 }}>
                 {others.map((plugin) => (
-                  <OtherPluginRow key={plugin.id} plugin={plugin} />
+                  <OtherPluginRow
+                    key={plugin.id}
+                    plugin={plugin}
+                    startExpanded={targetIds.has(plugin.id)}
+                    autoFocus={plugin.id === firstTargetId}
+                  />
                 ))}
               </div>
             </CollapsibleSection>

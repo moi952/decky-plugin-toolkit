@@ -24,7 +24,7 @@ export const GitHubSection: React.FC<GitHubSectionProps> = ({ fetchReleases, fea
   const { t } = useTranslation("settings_common");
   const { info, checking, checkNow } = usePluginUpdate();
 
-  const [expanded, setExpandedState] = useState(pluginUpdateFocus.isExpansionFresh);
+  const [expanded, setExpandedState] = useState(() => pluginUpdateFocus.consumeIsExpansionFresh());
   const setExpanded = (v: boolean) => {
     if (v) pluginUpdateFocus.markExpanded();
     setExpandedState(v);
@@ -39,7 +39,7 @@ export const GitHubSection: React.FC<GitHubSectionProps> = ({ fetchReleases, fea
   const sectionRef = useRef<HTMLDivElement>(null);
   useLandOnFresh(sectionRef, wasRestored, "last");
 
-  const featureRequestFresh = useRef(featureRequestFocus.isExpansionFresh()).current;
+  const featureRequestFresh = useRef(featureRequestFocus.consumeIsExpansionFresh()).current;
   const featureRequestRef = useRef<HTMLDivElement>(null);
   useLandOnFresh(featureRequestRef, featureRequestFresh, "first");
 

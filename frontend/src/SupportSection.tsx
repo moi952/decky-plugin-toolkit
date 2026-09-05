@@ -20,7 +20,7 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ kofiUrl = DEFAUL
   const { t } = useTranslation("settings_common");
   const { others } = useOtherPlugins();
 
-  const [expanded, setExpandedState] = useState(otherPluginsFocus.isExpansionFresh);
+  const [expanded, setExpandedState] = useState(() => otherPluginsFocus.consumeIsExpansionFresh());
   const setExpanded = (v: boolean) => {
     if (v) otherPluginsFocus.markExpanded();
     setExpandedState(v);
@@ -34,7 +34,7 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ kofiUrl = DEFAUL
   // Which plugins (if any) OtherPluginsBanner's single button just
   // announced — those rows start expanded, and only the first of them (in
   // list order) actually takes focus.
-  const targetIds = useRef(otherPluginItemFocus.getFreshIds()).current;
+  const targetIds = useRef(otherPluginItemFocus.consumeFreshIds()).current;
   const firstTargetId = others.find((p) => targetIds.has(p.id))?.id;
 
   // Only for a plain remount while already expanded (QAM close/reopen)

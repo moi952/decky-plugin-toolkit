@@ -8,6 +8,16 @@ const RESTORE_WINDOW_MS = 5000;
 export interface ExpansionFocus {
   markExpanded(): void;
   isExpansionFresh(): boolean;
+  // Reads isExpansionFresh() and, if it was fresh, immediately clears the
+  // mark — so a section consumes its own "land here" signal exactly once.
+  // Without this, re-entering Settings within the restore window (e.g.
+  // going back out and straight back in) kept landing on the same spot
+  // again, since the mark itself was never cleared, only time-limited.
+  // A section's own heartbeat (see SupportSection/GitHubSection) re-marks
+  // this on every tick *while it's actually still expanded*, which is a
+  // separate, legitimate "still open" signal this doesn't interfere with
+  // — only the one-shot initial-mount check should ever consume.
+  consumeIsExpansionFresh(): boolean;
 }
 
 export const makeExpansionFocus = (): ExpansionFocus => {
@@ -17,6 +27,11 @@ export const makeExpansionFocus = (): ExpansionFocus => {
       expandedAt = Date.now();
     },
     isExpansionFresh: () => Date.now() - expandedAt < RESTORE_WINDOW_MS,
+    consumeIsExpansionFresh: () => {
+      const fresh = Date.now() - expandedAt < RESTORE_WINDOW_MS;
+      if (fresh) expandedAt = 0;
+      return fresh;
+    },
   };
 };
 
@@ -37,17 +52,27 @@ export const featureRequestFocus = makeExpansionFocus();
 export interface SetFocus {
   markFocused(ids: string[]): void;
   getFreshIds(): Set<string>;
+  // Same one-shot consumption as ExpansionFocus.consumeIsExpansionFresh —
+  // clears the marked ids as soon as they're read, so re-entering the
+  // page again shortly after doesn't keep landing on the same plugin(s).
+  consumeFreshIds(): Set<string>;
 }
 
 export const makeSetFocus = (): SetFocus => {
   let ids: Set<string> = new Set();
   let markedAt = 0;
+  const freshIds = () => (Date.now() - markedAt < RESTORE_WINDOW_MS ? ids : new Set<string>());
   return {
     markFocused: (list: string[]) => {
       ids = new Set(list);
       markedAt = Date.now();
     },
-    getFreshIds: () => (Date.now() - markedAt < RESTORE_WINDOW_MS ? ids : new Set()),
+    getFreshIds: freshIds,
+    consumeFreshIds: () => {
+      const fresh = freshIds();
+      if (fresh.size > 0) markedAt = 0;
+      return fresh;
+    },
   };
 };
 

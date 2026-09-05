@@ -9,6 +9,12 @@ export const makeExpansionFocus = () => {
             expandedAt = Date.now();
         },
         isExpansionFresh: () => Date.now() - expandedAt < RESTORE_WINDOW_MS,
+        consumeIsExpansionFresh: () => {
+            const fresh = Date.now() - expandedAt < RESTORE_WINDOW_MS;
+            if (fresh)
+                expandedAt = 0;
+            return fresh;
+        },
     };
 };
 // Ready-made shared instances — a consumer's SettingsView imports these
@@ -20,12 +26,19 @@ export const featureRequestFocus = makeExpansionFocus();
 export const makeSetFocus = () => {
     let ids = new Set();
     let markedAt = 0;
+    const freshIds = () => (Date.now() - markedAt < RESTORE_WINDOW_MS ? ids : new Set());
     return {
         markFocused: (list) => {
             ids = new Set(list);
             markedAt = Date.now();
         },
-        getFreshIds: () => (Date.now() - markedAt < RESTORE_WINDOW_MS ? ids : new Set()),
+        getFreshIds: freshIds,
+        consumeFreshIds: () => {
+            const fresh = freshIds();
+            if (fresh.size > 0)
+                markedAt = 0;
+            return fresh;
+        },
     };
 };
 export const otherPluginItemFocus = makeSetFocus();

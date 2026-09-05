@@ -13,7 +13,7 @@ import { pluginUpdateFocus, featureRequestFocus, useLandOnFresh } from "./focusR
 export const GitHubSection = ({ fetchReleases, featureRequestUrl, bugReportUrl }) => {
     const { t } = useTranslation("settings_common");
     const { info, checking, checkNow } = usePluginUpdate();
-    const [expanded, setExpandedState] = useState(pluginUpdateFocus.isExpansionFresh);
+    const [expanded, setExpandedState] = useState(() => pluginUpdateFocus.consumeIsExpansionFresh());
     const setExpanded = (v) => {
         if (v)
             pluginUpdateFocus.markExpanded();
@@ -28,7 +28,7 @@ export const GitHubSection = ({ fetchReleases, featureRequestUrl, bugReportUrl }
     const wasRestored = useRef(expanded).current;
     const sectionRef = useRef(null);
     useLandOnFresh(sectionRef, wasRestored, "last");
-    const featureRequestFresh = useRef(featureRequestFocus.isExpansionFresh()).current;
+    const featureRequestFresh = useRef(featureRequestFocus.consumeIsExpansionFresh()).current;
     const featureRequestRef = useRef(null);
     useLandOnFresh(featureRequestRef, featureRequestFresh, "first");
     return (_jsxs(PanelSection, { title: t("github_section_title"), children: [_jsx(PanelSectionRow, { children: _jsx("div", { ref: sectionRef, children: _jsx(PluginUpdateSection, { info: info, checking: checking, expanded: expanded, onToggle: () => setExpanded(!expanded), onCheckNow: checkNow, fetchReleases: fetchReleases }) }) }), _jsx(PanelSectionRow, { children: _jsx("div", { ref: featureRequestRef, children: _jsx(QrCodeButton, { value: featureRequestUrl, label: t("feature_request_button"), hint: t("feature_request_hint") }) }) }), _jsx(PanelSectionRow, { children: _jsx(QrCodeButton, { value: bugReportUrl, label: t("bug_report_button"), hint: t("bug_report_hint") }) })] }));

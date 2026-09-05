@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useTranslation } from "react-i18next";
 import { ActionButton, StatusCard } from "@moi952/decky-ui-kit";
-import { FiPackage } from "react-icons/fi";
+import { FiPackage, FiEye, FiCheck } from "react-icons/fi";
 import { useOtherPlugins } from "./OtherPluginsContext";
 import { useWhatsNew } from "./WhatsNewContext";
 import { localizedDescription } from "./types";
@@ -26,5 +26,5 @@ export const OtherPluginsBanner = ({ onOpenSettings }) => {
         dismissNew();
         onOpenSettings();
     };
-    return (_jsx("div", { style: { margin: "0 16px 12px" }, children: _jsxs(StatusCard, { variant: "info", icon: _jsx(FiPackage, {}), title: t("banner_title", { count: newOnes.length }), children: [_jsx("div", { style: { display: "flex", flexDirection: "column", gap: 10, width: "100%", marginBottom: 10, textAlign: "left" }, children: newOnes.map((plugin) => (_jsxs("div", { children: [_jsx("div", { style: { fontSize: 13, fontWeight: 700 }, children: plugin.name }), _jsx("div", { style: { fontSize: 11, opacity: 0.8, marginTop: 2 }, children: localizedDescription(plugin, i18n.language) })] }, plugin.id))) }), _jsx("div", { style: { marginBottom: 6 }, children: _jsx(ActionButton, { size: "medium", width: "100%", onClick: onPreview, children: t("preview_plugin", { count: newOnes.length }) }) }), _jsx("div", { children: _jsx(ActionButton, { size: "medium", onClick: dismissNew, width: "100%", children: t("dismiss") }) })] }) }));
+    return (_jsx("div", { style: { margin: "0 16px 12px" }, children: _jsxs(StatusCard, { variant: "info", icon: _jsx(FiPackage, {}), title: t("banner_title", { count: newOnes.length }), children: [_jsx("div", { style: { display: "flex", flexDirection: "column", gap: 10, width: "100%", marginBottom: 10, textAlign: "left" }, children: newOnes.map((plugin) => (_jsxs("div", { children: [_jsx("div", { style: { fontSize: 13, fontWeight: 700 }, children: plugin.name }), _jsx("div", { style: { fontSize: 11, opacity: 0.8, marginTop: 2 }, children: localizedDescription(plugin, i18n.language) })] }, plugin.id))) }), _jsx("div", { style: { marginBottom: 6 }, children: _jsxs(ActionButton, { size: "medium", width: "100%", onClick: onPreview, children: [_jsx(FiEye, { size: 14, style: { marginRight: 6 } }), t("preview_plugin", { count: newOnes.length })] }) }), _jsx("div", { children: _jsxs(ActionButton, { size: "medium", onClick: dismissNew, width: "100%", children: [_jsx(FiCheck, { size: 14, style: { marginRight: 6 } }), t("dismiss")] }) })] }) }));
 };

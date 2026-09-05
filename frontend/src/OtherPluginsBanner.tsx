@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { ActionButton, StatusCard } from "@moi952/decky-ui-kit";
-import { FiPackage } from "react-icons/fi";
+import { FiPackage, FiEye, FiCheck } from "react-icons/fi";
 
 import { useOtherPlugins } from "./OtherPluginsContext";
 import { useWhatsNew } from "./WhatsNewContext";
@@ -53,6 +53,7 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
         </div>
         <div style={{ marginBottom: 6 }}>
           <ActionButton size="medium" width="100%" onClick={onPreview}>
+            <FiEye size={14} style={{ marginRight: 6 }} />
             {t("preview_plugin", { count: newOnes.length })}
           </ActionButton>
         </div>
@@ -61,6 +62,7 @@ export const OtherPluginsBanner: React.FC<OtherPluginsBannerProps> = ({ onOpenSe
             the notification shouldn't require it. */}
         <div>
           <ActionButton size="medium" onClick={dismissNew} width="100%">
+            <FiCheck size={14} style={{ marginRight: 6 }} />
             {t("dismiss")}
           </ActionButton>
         </div>

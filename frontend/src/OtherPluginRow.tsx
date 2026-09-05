@@ -4,6 +4,7 @@ import { toaster } from "@decky/api";
 import { useTranslation } from "react-i18next";
 import { ActionButton, CollapsibleSection } from "@moi952/decky-ui-kit";
 import { FaGithub } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 
 import { OtherPluginEntry, localizedDescription } from "./types";
 import { fetchLatestReleaseFor, installPlugin, PluginInstallType } from "./deckyInstall";
@@ -53,6 +54,7 @@ export const OtherPluginRow: React.FC<OtherPluginRowProps> = ({ plugin }) => {
         </div>
         <div style={{ marginBottom: 6 }}>
           <ActionButton onClick={install} disabled={installing} width="100%">
+            <FiDownload size={14} style={{ marginRight: 6 }} />
             {installing ? t("installing") : t("install_latest")}
           </ActionButton>
         </div>

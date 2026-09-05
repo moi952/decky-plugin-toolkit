@@ -9,6 +9,6 @@ export { OtherPluginRow } from "./OtherPluginRow";
 export { OtherPluginsBanner } from "./OtherPluginsBanner";
 export { getDeckyBackend, installPlugin, fetchLatestReleaseFor, PluginInstallType } from "./deckyInstall";
 export { compareVersions } from "./versions";
-export { makeExpansionFocus, pluginUpdateFocus, otherPluginsFocus } from "./focusRestore";
+export { makeExpansionFocus, pluginUpdateFocus, otherPluginsFocus, featureRequestFocus, useLandOnFresh, } from "./focusRestore";
 export { pluginToolkitTranslations } from "./translations";
 export { localizedDescription, DEFAULT_OTHER_PLUGINS_MANIFEST_URL, } from "./types";

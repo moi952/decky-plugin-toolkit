@@ -1,3 +1,4 @@
+export { BackHandler } from "./BackHandler";
 export { PluginUpdateProvider, usePluginUpdate } from "./PluginUpdateContext";
 export { PluginUpdateBanner, PluginUpdateSection } from "./PluginUpdate";
 export { WhatsNewProvider, useWhatsNew } from "./WhatsNewContext";

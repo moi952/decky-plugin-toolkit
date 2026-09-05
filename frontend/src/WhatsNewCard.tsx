@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Focusable } from "@decky/ui";
 import { ActionButton } from "@moi952/decky-ui-kit";
 import { useTranslation } from "react-i18next";
-import { FiChevronLeft, FiChevronRight, FiExternalLink, FiGift } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight, FiExternalLink, FiGift, FiCoffee } from "react-icons/fi";
 
 export interface WhatsNewVersionEntry {
   key: string;
@@ -123,7 +123,10 @@ export const WhatsNewCard: React.FC<WhatsNewCardProps> = ({
         </ActionButton>
       )}
 
-      <div style={{ fontSize: 10, opacity: 0.6, marginTop: 10 }}>{t("support_note")}</div>
+      <div style={{ fontSize: 10, opacity: 0.6, marginTop: 10, display: "flex", alignItems: "center", justifyContent: "center", gap: 5 }}>
+        <FiCoffee size={11} style={{ flexShrink: 0 }} />
+        {t("support_note")}
+      </div>
     </div>
   );
 };

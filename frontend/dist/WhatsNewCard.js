@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Focusable } from "@decky/ui";
 import { ActionButton } from "@moi952/decky-ui-kit";
 import { useTranslation } from "react-i18next";
-import { FiChevronLeft, FiChevronRight, FiExternalLink, FiGift } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight, FiExternalLink, FiGift, FiCoffee } from "react-icons/fi";
 // Shared prev/next-paging changelog card. Uses the "whats_new" i18n
 // namespace only for its own fixed strings (older/newer/support_note) —
 // see this package's translations.ts for the resource bundle to merge
@@ -38,5 +38,5 @@ export const WhatsNewCard = ({ versions, initialVersionKey, dismissLabel, onDism
                     width: "100%",
                     gap: 8,
                     marginBottom: dismissLabel && onDismiss ? 10 : 0,
-                }, "flow-children": "horizontal", children: [_jsx("div", { style: { flex: 1 }, children: _jsxs(ActionButton, { width: "100%", disabled: index === versions.length - 1, onClick: () => setIndex((i) => Math.min(i + 1, versions.length - 1)), children: [_jsx(FiChevronLeft, { size: 12, style: { marginRight: 4 } }), t("older")] }) }), _jsx("div", { style: { flex: 1 }, children: _jsxs(ActionButton, { width: "100%", disabled: index === 0, onClick: () => setIndex((i) => Math.max(i - 1, 0)), children: [t("newer"), _jsx(FiChevronRight, { size: 12, style: { marginLeft: 4 } })] }) })] })), onFeatureRequest && (_jsx("div", { style: { width: "100%", marginBottom: dismissLabel && onDismiss ? 10 : 0 }, children: _jsxs(ActionButton, { onClick: onFeatureRequest, width: "100%", children: [_jsx(FiExternalLink, { size: 12, style: { marginRight: 6 } }), featureRequestLabel] }) })), dismissLabel && onDismiss && (_jsx(ActionButton, { onClick: onDismiss, width: "100%", children: dismissLabel })), _jsx("div", { style: { fontSize: 10, opacity: 0.6, marginTop: 10 }, children: t("support_note") })] }));
+                }, "flow-children": "horizontal", children: [_jsx("div", { style: { flex: 1 }, children: _jsxs(ActionButton, { width: "100%", disabled: index === versions.length - 1, onClick: () => setIndex((i) => Math.min(i + 1, versions.length - 1)), children: [_jsx(FiChevronLeft, { size: 12, style: { marginRight: 4 } }), t("older")] }) }), _jsx("div", { style: { flex: 1 }, children: _jsxs(ActionButton, { width: "100%", disabled: index === 0, onClick: () => setIndex((i) => Math.max(i - 1, 0)), children: [t("newer"), _jsx(FiChevronRight, { size: 12, style: { marginLeft: 4 } })] }) })] })), onFeatureRequest && (_jsx("div", { style: { width: "100%", marginBottom: dismissLabel && onDismiss ? 10 : 0 }, children: _jsxs(ActionButton, { onClick: onFeatureRequest, width: "100%", children: [_jsx(FiExternalLink, { size: 12, style: { marginRight: 6 } }), featureRequestLabel] }) })), dismissLabel && onDismiss && (_jsx(ActionButton, { onClick: onDismiss, width: "100%", children: dismissLabel })), _jsxs("div", { style: { fontSize: 10, opacity: 0.6, marginTop: 10, display: "flex", alignItems: "center", justifyContent: "center", gap: 5 }, children: [_jsx(FiCoffee, { size: 11, style: { flexShrink: 0 } }), t("support_note")] })] }));
 };
